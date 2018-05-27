@@ -52,7 +52,7 @@ instance Eq (DictOf c f a) where
   _ == _ = True
 
 instance Show (DictOf c f a) where
-  showsPrec _ PackedDict     = showString "PackedDict"
+  showsPrec _ PackedDict = showString "PackedDict"
 
 instance Show1 (DictOf c f) where
   liftShowsPrec _ _ = showsPrec
